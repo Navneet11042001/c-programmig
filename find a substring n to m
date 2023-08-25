@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    char str[20],cpy[20];
+    int i,m,n;
+    printf("enter string ");
+    gets(str);
+    printf("enter start position to start a substring ");
+    scanf("%d",&m);
+    printf("enter end position to end a substring ");
+    scanf("%d",&n);
+    int j=0;
+    for(i=m-1;i<n;i++)
+    {
+        cpy[j]=str[i];
+        j++;
+    }
+    printf("%s",cpy);
+
+    return 0;
+}
+
+
+output
+
+enter string navneet
+enter start position to start a substring 2
+enter end position to end a substring 5
+avne
