@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int arr[100],n,i,even=0,odd=0;
+    printf("print how many numbers ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+      printf("enter array  ");
+      scanf("%d",&arr[i]);
+      if(arr[i]%2==0)
+      {
+          even=even+arr[i];
+      }
+      else
+      {
+          odd=odd+arr[i];
+      }
+    }
+      printf("sum of even number is %d",even);
+      printf("\nsum of odd number is %d",odd);
+    return 0;
+}
+
+output
+print how many numbers 7
+enter array  5
+enter array  2
+enter array  6
+enter array  7
+enter array  1
+enter array  8
+enter array  3
+sum of even number is 16
+sum of odd number is 16
