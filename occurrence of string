@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char str[20],c;
+    int i,n,count=0;
+    printf("enter string ");
+    gets(str);
+    printf("enter which letter to be count ");
+    scanf("%c",&c);
+    n=strlen(str);
+    for(i=0;i<n;i++)
+    {
+        if(str[i]==c)
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+
+    return 0;
+}
+
+output
+enter string mississippi
+enter which letter to be count i
+4
