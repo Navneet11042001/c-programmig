@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int arr[100],po,i,n,count,j,k;
+    printf("print how many numbers ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+      printf("enter %d position: ",i+1);
+      scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+           count=1;
+              for(j=i+1;j<n;j++)
+              {
+                    if(arr[i]==arr[j])
+                    {
+                        arr[j]=NULL;
+                       count++;
+                    }
+              }
+              if(arr[i]!=NULL)
+              {
+                printf("\n%d is %d",arr[i],count);
+              }
+    }
+    return 0;
+}
+
+
+output
+
+print how many numbers 9
+enter 1 position: 1
+enter 2 position: 2
+enter 3 position: 1
+enter 4 position: 2
+enter 5 position: 3
+enter 6 position: 3
+enter 7 position: 5
+enter 8 position: 6
+enter 9 position: 5
+1 is 2
+2 is 2
+3 is 2
+5 is 2
+6 is 1
