@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str[20];
+    char i,j,f1;
+    printf("enter string ");
+    gets(str);
+    j=strlen(str);
+    for(i=0;i<j/2;i++)
+    {
+       if(str[i]==str[j-1-i])
+       {
+           f1=1;
+       }
+       else
+       {
+           break;
+       }
+    }
+    if(f1==1)
+    {
+        printf("palindrome");
+    }
+    else
+    {
+        printf("non palindrome");
+    }
+
+    return 0;
+}
+
+
+output
+
+enter string MALAYALAM
+palindrome
