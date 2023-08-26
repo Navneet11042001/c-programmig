@@ -8,7 +8,7 @@ int main() {
     scanf("%d",&target);
     for(i=0;i<n;i++)
     {
-      printf("enter array %d ",i+1);
+      printf("enter %d position: ",i+1);
       scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++)
@@ -30,15 +30,16 @@ int main() {
 
 
 
+
 output
 
 print how many numbers 5
-enter target 4
-enter array 1 1
-enter array 2 3
-enter array 3 2
-enter array 4 2
-enter array 5 5
-pair 1 of 1 and 3
-pair 2 of 2 and 2
+enter target 3
+enter 1 position: 1
+enter 2 position: 2
+enter 3 position: 0
+enter 4 position: 3
+enter 5 position: 4
+pair 1 of 1 and 2
+pair 2 of 0 and 3
 NUmber of target pair is 2
