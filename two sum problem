@@ -15,11 +15,18 @@ int main() {
     {
         for(j=0;j<n;j++)
         {
-            if(arr[i]+arr[j]==target)
+            if(i==j)
             {
+                
+            }
+            else
+            {
+              if(arr[i]+arr[j]==target)
+              {
                 count++;
                 printf("\npair %d of %d and %d",k,arr[i],arr[j]);
                 k++;
+              }
             }
         }
     }
@@ -27,16 +34,17 @@ int main() {
     return 0;
 }
 
+
 output
 print how many numbers 5
-enter target 2
+enter target 4
 enter array 1 1
-enter array 2 1
+enter array 2 3
 enter array 3 2
-enter array 4 4
-enter array 5 3
-pair 1 of 1 and 1
-pair 2 of 1 and 1
-pair 3 of 1 and 1
-pair 4 of 1 and 1
+enter array 4 2
+enter array 5 4
+pair 1 of 1 and 3
+pair 2 of 3 and 1
+pair 3 of 2 and 2
+pair 4 of 2 and 2
 NUmber of target pair is 4
