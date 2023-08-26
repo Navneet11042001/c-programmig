@@ -1,0 +1,39 @@
+
+int main() {
+    char i,j,n;
+    char ascii;
+    printf("enter n ");
+    scanf("%d",&n);
+    for(i=1;i<n;i++)
+    {
+        for(j=1;j<n;j++)
+        {
+              ascii=i;
+            if(i%2==1)
+            {
+                ascii=ascii+64;
+                printf("%c ",ascii);
+            }
+            else
+            {
+                ascii=ascii+96;
+                printf("%c ",ascii);
+                ascii++;
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+output
+
+enter n 7
+A A A A A A 
+b b b b b b 
+C C C C C C 
+d d d d d d 
+E E E E E E 
+f f f f f f 
