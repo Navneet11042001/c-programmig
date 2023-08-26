@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    char ascii=65;
+    for(i=1;i<6;i++)
+    {
+        for(j=1;j<6;j++)
+        {
+            if(i==1 || i==5 || j==1 || j==5)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("%c ",ascii);
+                ascii++;
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+output
+
+* * * * * 
+* A B C * 
+* D E F * 
+* G H I * 
+* * * * * 
