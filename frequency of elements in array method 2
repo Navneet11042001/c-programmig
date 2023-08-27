@@ -22,7 +22,7 @@ int main() {
               }
               if(arr[i]!=NULL)
               {
-                printf("\n%d is %d",arr[i],count);
+                printf("\nFrequency of %d is %d",arr[i],count);
               }
     }
     return 0;
