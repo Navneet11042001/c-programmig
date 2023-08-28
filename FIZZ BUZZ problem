@@ -1,0 +1,131 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,arr[100];
+    for(i=1;i<=100;i++)
+    {
+        if(i%3==0 && i%5==0)
+       {
+           printf("\n%d is FIZZBUZZ",i);
+       }
+        
+       else{
+            if(i%3==0)
+            {
+            printf("\n%d is FIZZ",i);
+            }
+            else if(i%5==0)
+            {
+            printf("\n%d is BUZZ",i);
+            }
+            else
+            {
+                printf("\n%d ",i);
+            }
+           }
+    }
+
+    return 0;
+}
+
+output
+1
+2 
+3 is FIZZ
+4 
+5 is BUZZ
+6 is FIZZ
+7 
+8 
+9 is FIZZ
+10 is BUZZ
+11 
+12 is FIZZ
+13 
+14 
+15 is FIZZBUZZ
+16 
+17 
+18 is FIZZ
+19 
+20 is BUZZ
+21 is FIZZ
+22 
+23 
+24 is FIZZ
+25 is BUZZ
+26 
+27 is FIZZ
+28 
+29 
+30 is FIZZBUZZ
+31 
+32 
+33 is FIZZ
+34 
+35 is BUZZ
+36 is FIZZ
+37 
+38 
+39 is FIZZ
+40 is BUZZ
+41 
+42 is FIZZ
+43 
+44 
+45 is FIZZBUZZ
+46 
+47 
+48 is FIZZ
+49 
+50 is BUZZ
+51 is FIZZ
+52 
+53 
+54 is FIZZ
+55 is BUZZ
+56 
+57 is FIZZ
+58 
+59 
+60 is FIZZBUZZ
+61 
+62 
+63 is FIZZ
+64 
+65 is BUZZ
+66 is FIZZ
+67 
+68 
+69 is FIZZ
+70 is BUZZ
+71 
+72 is FIZZ
+73 
+74 
+75 is FIZZBUZZ
+76 
+77 
+78 is FIZZ
+79 
+80 is BUZZ
+81 is FIZZ
+82 
+83 
+84 is FIZZ
+85 is BUZZ
+86 
+87 is FIZZ
+88 
+89 
+90 is FIZZBUZZ
+91 
+92 
+93 is FIZZ
+94 
+95 is BUZZ
+96 is FIZZ
+97 
+98 
+99 is FIZZ
+100 is BUZZ
