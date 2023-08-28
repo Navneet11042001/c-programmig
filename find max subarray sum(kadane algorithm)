@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+  int i,j,arr[20],n,max=0,current=0;
+  printf("enter n ");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+      printf("Enter %d position: ",i+1);
+      scanf("%d",&arr[i]);
+  }
+    for(i=0; i<n; i++)
+    {
+       current=current+arr[i];
+       if(current<0)
+       {
+           current=0;
+       }
+       if(max<current)
+       {  
+          max=current; 
+          j=i+1;
+       }
+    }
+    printf("starting array is %d\nsub array ends %d \n MAX sum is %d",k,j,max);
+
+    return 0;
+}
